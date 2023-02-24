@@ -12,6 +12,11 @@ parameters:
   - windows-latest
   - ubuntu-latest
   - macOS-latest
+  - one
+  - two
+  - three
+  - four
+  - five
 
 trigger: none
 
