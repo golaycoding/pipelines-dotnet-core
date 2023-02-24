@@ -30,3 +30,4 @@ jobs:
     vmImage: ${{ parameters.image }}
   steps:
   - script: echo building $(Build.BuildNumber) with ${{ parameters.image }}
+  - script: echo ${{parameters.configs}}
