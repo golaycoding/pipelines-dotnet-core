@@ -11,9 +11,7 @@ pool:
   vmImage: ubuntu-latest
 
 
-steps:
-- powershell: ${env:SYSTEM_DEBUG}
-  
+steps:  
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
