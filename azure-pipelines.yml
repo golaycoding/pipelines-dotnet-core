@@ -4,20 +4,17 @@
 # https://aka.ms/yaml
 
 
+trigger:
+- master
 
-
-variables:
-- name: one
-  value: initialValue 
+pool:
+  vmImage: ubuntu-latest
 
 steps:
-  - script: |
-      echo ${{ variables.one }} # outputs initialValue
-      echo $(one)
-    displayName: First variable pass
-  - bash: echo "##vso[task.setvariable variable=one]secondValue"
-    displayName: Set new variable value
-  - script: |
-      echo ${{ variables.one }} # outputs initialValue
-      echo $(one) # outputs secondValue
-    displayName: Second variable pass
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
