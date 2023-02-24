@@ -4,6 +4,9 @@
 # https://aka.ms/yaml
 
 parameters:
+- name: configs
+  type: string
+  default: 'golay'
 - name: image
   displayName: Pool Image
   type: string
