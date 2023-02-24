@@ -12,9 +12,7 @@ pool:
 
 
 steps:
-- script: |
-    echo $env:PATH
-  displayName: 'powershell example'
+- powershell: echo %PATH%
   
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
