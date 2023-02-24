@@ -10,7 +10,12 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+
 steps:
+- script: |
+    echo %PATH%
+  displayName: 'powershell example'
+  
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
